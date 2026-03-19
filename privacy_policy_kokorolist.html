@@ -107,7 +107,7 @@
   </div>
 
   <div class="highlight">
-    <p>KokoroList es una aplicación diseñada con la privacidad como prioridad. <strong style="color:#fff">Toda la información que introduces en la app se almacena únicamente en tu dispositivo</strong> y nunca es enviada a servidores propios ni compartida con terceros.</p>
+    <p>KokoroList es una aplicación diseñada con la privacidad como prioridad. <strong style="color:#fff">Toda la información que introduces en la app se almacena únicamente en tu dispositivo</strong> y nunca es enviada a servidores propios ni compartida con terceros, salvo las consultas necesarias a las APIs externas descritas en esta política.</p>
   </div>
 
   <h2>1. Responsable de la aplicación</h2>
@@ -123,6 +123,7 @@
     <li>Historial de actividad y estadísticas de uso local (Wrapped).</li>
     <li>Copias de seguridad (backups) generadas por el usuario y almacenadas en el almacenamiento local del dispositivo.</li>
     <li>Historial de búsquedas de música dentro de la app.</li>
+    <li>Caché de sinopsis traducidas, datos de detalle y recomendaciones, almacenados localmente para reducir el consumo de datos.</li>
   </ul>
   <p>Estos datos <strong style="color:#fff">no salen de tu dispositivo</strong> en ningún momento de forma automática.</p>
 
@@ -138,35 +139,40 @@
   <p>La aplicación <strong style="color:#fff">no requiere cuenta de usuario</strong> ni registro de ningún tipo.</p>
 
   <h2>4. Conexiones a servicios externos</h2>
-  <p>Para mostrar información sobre anime, manga y películas, KokoroList realiza consultas a la siguiente API pública:</p>
+  <p>Para mostrar información sobre anime, manga y películas, KokoroList realiza consultas a los siguientes servicios externos:</p>
   <ul>
-    <li><strong style="color:#fff">Jikan API (jikan.moe)</strong> — API pública no oficial basada en MyAnimeList. Las consultas incluyen únicamente los identificadores numéricos (MAL ID) de las obras que consultas. No se envía ningún dato personal. Puedes consultar su política de uso en <a href="https://jikan.moe" style="color:#ff9800">jikan.moe</a>.</li>
+    <li><strong style="color:#fff">AniList API (anilist.co)</strong> — API pública de AniList. Las consultas incluyen únicamente los identificadores numéricos (AniList ID / MAL ID) de las obras que consultas, así como términos de búsqueda de texto libre. No se envía ningún dato personal. Puedes consultar su política en <a href="https://anilist.co/terms" style="color:#ff9800">anilist.co/terms</a>.</li>
+    <li><strong style="color:#fff">Google Translate API</strong> — Utilizada para traducir automáticamente sinopsis y textos de obras al idioma seleccionado en la app. Las consultas incluyen únicamente el texto de las sinopsis de las obras, sin ningún dato personal del usuario. Sujeto a la <a href="https://policies.google.com/privacy" style="color:#ff9800">Política de Privacidad de Google</a>.</li>
     <li><strong style="color:#fff">iTunes Search API (Apple)</strong> — Utilizada en la sección de música para buscar canciones relacionadas con anime. Las búsquedas se realizan con términos de texto sin asociar a ningún identificador de usuario.</li>
+    <li><strong style="color:#fff">Google Gemini API</strong> — Utilizada en la función «Consultador de relleno» para obtener información sobre episodios de relleno y canónico de una obra. Las consultas incluyen únicamente el título del anime consultado, sin ningún dato personal del usuario. Sujeto a la <a href="https://policies.google.com/privacy" style="color:#ff9800">Política de Privacidad de Google</a>.</li>
   </ul>
   <p>KokoroList no tiene servidores propios. No existe ninguna base de datos externa que almacene información sobre los usuarios.</p>
 
-  <h2>5. Función "Comparar listas con un amigo"</h2>
+  <h2>5. Función «Comparar listas con un amigo»</h2>
   <p>Esta función genera un código de texto a partir de tu lista (solo identificadores numéricos de obras, puntuaciones y estados). Este código se copia manualmente al portapapeles y lo compartes tú mismo por el medio que elijas (WhatsApp, email, etc.).</p>
   <p>KokoroList <strong style="color:#fff">no envía ni transmite este código automáticamente</strong>. La transmisión siempre es manual y controlada por el usuario.</p>
 
-  <h2>6. Feedback y contacto</h2>
+  <h2>6. Función «Comparador de obras»</h2>
+  <p>Esta función permite comparar dos títulos de anime utilizando datos obtenidos directamente desde la API pública de AniList. No se envía ningún dato personal. Las consultas se realizan con los identificadores numéricos de las obras seleccionadas.</p>
+
+  <h2>7. Feedback y contacto</h2>
   <p>La aplicación incluye un botón de feedback que abre un formulario externo (Google Forms). Si decides enviar feedback, te redirige al sitio web de Google. Los datos que introduzcas en ese formulario están sujetos a la <a href="https://policies.google.com/privacy" style="color:#ff9800">Política de Privacidad de Google</a>. El uso de este formulario es completamente voluntario.</p>
 
-  <h2>7. Permisos de la aplicación</h2>
+  <h2>8. Permisos de la aplicación</h2>
   <p>KokoroList solicita únicamente los siguientes permisos:</p>
   <ul>
-    <li><strong style="color:#fff">Acceso a Internet</strong> — necesario para consultar información de anime y manga en Jikan API y para la búsqueda de música.</li>
+    <li><strong style="color:#fff">Acceso a Internet</strong> — necesario para consultar información de anime y manga en AniList, para la traducción automática de sinopsis, para la búsqueda de música y para el consultador de relleno.</li>
     <li><strong style="color:#fff">Acceso al almacenamiento</strong> — necesario para guardar y restaurar backups de tu lista en el almacenamiento local del dispositivo.</li>
   </ul>
   <p>No se solicitan permisos de cámara, micrófono, contactos, ubicación ni ningún otro dato sensible.</p>
 
-  <h2>8. Menores de edad</h2>
+  <h2>9. Menores de edad</h2>
   <p>KokoroList no está dirigida específicamente a menores de 13 años. Al no recopilar ningún dato personal, no existe riesgo asociado al uso de la app por parte de menores en lo que respecta a la privacidad.</p>
 
-  <h2>9. Cambios en esta política</h2>
+  <h2>10. Cambios en esta política</h2>
   <p>Si en el futuro realizamos cambios significativos en esta política (por ejemplo, si añadimos funcionalidades que impliquen recopilación de datos), lo comunicaremos mediante una actualización de la app y actualizaremos la fecha de esta página.</p>
 
-  <h2>10. Contacto</h2>
+  <h2>11. Contacto</h2>
   <div class="contact-box">
     <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos a través del botón de feedback dentro de la aplicación KokoroList.</p>
     <p style="margin-top:10px; color:#888; font-size:13px;">Respondemos en español, inglés y japonés.</p>
